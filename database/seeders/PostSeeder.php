@@ -26,6 +26,7 @@ class PostSeeder extends Seeder
                 'description' => $faker->sentence(),
                 'detail' => $faker->paragraph(),
                 'category_id' => mt_rand(1, 3),
+                'lastest' => $faker->date(),
                 'image' => $faker->imageUrl(800, 480, 'animals', true)
             ]);
         }

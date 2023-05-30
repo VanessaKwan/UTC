@@ -10,10 +10,11 @@
 </head>
 <body>
 
-    @include('layout.header')
+    {{-- <div class="flex"> --}}
+        @include('layout.header')
 
-
-    @yield('content')
+        @yield('content')
+    {{-- </div> --}}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>

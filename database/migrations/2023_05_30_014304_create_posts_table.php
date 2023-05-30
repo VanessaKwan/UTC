@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('description');
             $table->text('detail');
             $table->foreignId('category_id')->references('id')->on('categories');
+            $table->date('lastest');
             $table->string('image')->nullable();
             $table->string('video')->nullable();
             $table->timestamps();
